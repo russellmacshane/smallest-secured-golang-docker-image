@@ -10,3 +10,9 @@
 
 # Output of the go coverage tool, specifically when used with LiteIDE
 *.out
+
+# Intelli J folder
+.idea
+
+# Binary file for testing locally
+smallest-secured-golang-docker-image
