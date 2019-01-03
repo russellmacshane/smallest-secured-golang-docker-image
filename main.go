@@ -14,6 +14,7 @@ func checkWebsite(website string) error {
 
 	resp, err := http.Get(website)
 	if err != nil {
+		fmt.Printf("error with GET: %s", err)
 		return err
 	}
 
@@ -29,5 +30,8 @@ func checkWebsite(website string) error {
 }
 
 func main() {
-	checkWebsite("https://chemidy.cloud")
+	err := checkWebsite("https://chemidy.cloud")
+	if err != nil {
+		fmt.Println(err)
+	}
 }
